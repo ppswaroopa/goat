@@ -13,13 +13,15 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='root',
-    maintainer_email='root@todo.todo',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer='Pranava Swaroopa',
+    maintainer_email='ppswaroopa@gmail.com',
+    description='Cafe butler that delivers orders from Kitchen to Tables',
+    license='MIT License',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'cafe_butler = cafe_butler.butler:main',
+            'order_simulator = cafe_butler.orders:main'
         ],
     },
 )
